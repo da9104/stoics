@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@100;300&display=swap');
+
+:root {
+    width: 100vw;   
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+
+    background-color: #d0c4b3;
+    font-family: 'Bitter', serif;
+
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.brand {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+header nav {
+    align-self: center;
+    margin-right: 50px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    border-bottom: 1px solid white;
+  
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: gray;
+    text-decoration: underline;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 1s ease;
+    animation-fill-mode: forwards;
+};
+
+@keyframes fadeIn {
+      0% {  opacity: 0; }
+      100% {
+        opacity: 1;
+    }
+  }
+
+#header .roman {
+    margin: 100px auto 0 auto;
+    width: 200px;
+    opacity: .5;
+}
+
+#header h1 {
+    
+    text-align: center;
+    font-size: 1.9rem;
+}
+
+#header p {
+    text-align: center;
+    margin: 20px auto;
+    width: 500px;
+}
+#header button {
+    width: 150px;
+    margin: 0 auto;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: transparent;
+}
+
+#header .leaves {
+    margin: 0 auto;
+    width: 200px;
+    z-index: -1;
+    opacity: .4;
+    position: relative;
+    top: -100px;
+}
+
+
+#header button a {
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+
+.main {
+    padding: 70px;
+    margin: 0px auto;
+}
+
+
+#stoics {
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 3rem;
+}
+
+#author::before {
+    content: "- ";
+}
+
+
+aside {
+    margin: 50px auto;
+    padding: 10px;
+    text-align: center;
+    border: 20px solid #c9b08d; 
+    border-radius: 5px;
+}
+
+aside figure {
+    width: 100px; /*container-width*/
+    height: 100px;
+    overflow: hidden; /*hide bounds of image */
+    margin: 0 auto; /*reset margin of figure tag*/
+    border-radius: 50%;
+}
+
+aside figure img {
+     display: block; /*remove inline-block spaces*/  
+     margin: -75% -25.5%;  /*add to other styles*/
+     width: 155px;
+}
+
+
+aside h3 {
+    margin-top: 5px;
+}
+
+
+aside ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+aside ul li a:hover {
+    text-decoration: underline;
+    color: gray;
+}
+
+footer {
+    font-size: 11px;
+    text-align: center;
+    color: gray;
+}
