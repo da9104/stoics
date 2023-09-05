@@ -1,7 +1,7 @@
 const getStoic = async () => {
     try {
-        const res = await axios.get("https://stoicquotesapi.com/v1/api/quotes/random")
-        return res.data.body;
+        const res = await axios.get("https://api.themotivate365.com/stoic-quote")
+        return res.data.quote;
        }
     catch (e) {
         return "NO STOIC AVAILABLE! SORRY!"
@@ -10,7 +10,7 @@ const getStoic = async () => {
 
  const getStoicAuthor = async () => {
     try {
-        const res = await axios.get("https://stoicquotesapi.com/v1/api/quotes/random")
+        const res = await axios.get("https://api.themotivate365.com/stoic-quote")
         return res.data.author;
        }
     catch (e) {
